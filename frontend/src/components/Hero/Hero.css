@@ -1,0 +1,25 @@
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+
+}
+.alexi{
+    width: 1300px;
+}
+
+.explore{
+    width:310px;
+    height: 70px;
+    border-radius: 75px;
+    background: rgb(135, 59, 179);
+    color: white;
+    font-size:22px;
+    border:none;
+    outline: none;
+    box-shadow: none;
+}
+.explore:active{
+    background-color:rgb(149, 109, 172); ;
+}
