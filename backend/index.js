@@ -6,13 +6,13 @@ const multer = require('multer')
 const path = require('path')
 const cors = require('cors')
 const port = 4000;
-
-
+const dotenv = require('dotenv')
+dotenv.config()
 
 app.use(express.json());
 app.use(cors());
 //database connect with mongodb
-mongoose.connect('mongodb+srv://revv:revv11@cluster0.orhbdgl.mongodb.net/e-commerce')
+mongoose.connect(process.env.MONGO_URI)
     .then(()=>{
         app.listen(port, (err)=>{
             if(!err){
